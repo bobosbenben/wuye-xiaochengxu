@@ -1,0 +1,63 @@
+@import '../CustomeredTagTemplate/CustomeredTagTemplate.wxss';
+
+.main-info{
+  background-color: white;
+  padding: 0px 15px;
+}
+
+.head{
+  line-height: 30px;
+  color: #888;
+  font-size: 12px;
+  border-bottom: 1px solid #F6F6F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.community-img{
+  height: 64px;
+  width: 80px;
+  margin-right: 15px;
+}
+
+.content{
+  width:100%;
+  display: flex;
+  padding: 15px 0px 0px 0px;
+}
+
+.update{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.wing{
+  width: 70%;
+}
+
+.text-button{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info{
+  line-height: 1;
+}
+
+.address{
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.phone-number{
+  font-size: 16px;
+  color: #999999;
+}

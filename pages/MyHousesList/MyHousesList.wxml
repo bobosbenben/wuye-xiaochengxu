@@ -1,0 +1,7 @@
+<import src="../../utils/template/MyHouseTemplate/MyHouseTemplate.wxml" />
+
+<view>
+  <!-- <view class='list-text'>我的房屋</view> -->
+  <view class='white-space'></view>
+  <template is="MyHouseTemplate" data="{{...singleHouseInfo}}" />
+</view>

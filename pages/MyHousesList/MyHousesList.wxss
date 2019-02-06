@@ -1,0 +1,32 @@
+@import '../../utils/template/MyHouseTemplate/MyHouseTemplate.wxss';
+
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.white-space{
+  height: 9px;
+}
+
+.list{
+  background-color: white;
+}
+
+.list-text{
+  padding: 15px 15px 9px 15px;
+    font-size: 18px;
+    color: #888;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: #fff;
+  color: rgb(58, 180, 221);
+}

@@ -1,0 +1,26 @@
+<import src="../CustomeredTagTemplate/CustomeredTagTemplate.wxml" />
+
+<template name="MyHouseTemplate">
+  <view class='main-info'>
+    <view class='head'>
+      <view>万佳御园小区</view>
+      <template wx:if="{{isShow}}" is="CustomeredTagTemplate" />
+    </view>
+
+    <view class='content'>
+      <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/xq.png' class='community-img'/>
+      <view class='text-button'>
+        <view class='info'>
+          <view class='address'>5号楼1单元903室</view>
+          <view class='phone-number'>联系方式：15391257468</view>
+        </view>
+        <view class='white-space' />
+        <view class='update'>
+          <view class='wing'/>
+          <button size='mini'>修改</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</template>

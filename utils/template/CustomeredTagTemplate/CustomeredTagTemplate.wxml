@@ -1,0 +1,8 @@
+<template name="CustomeredTagTemplate">
+  <block >
+    <view class='tag'>
+      默认
+    </view>
+  </block>
+
+</template>
