@@ -12,6 +12,7 @@
 
 .head{
   line-height: 30px;
+  width: 100%;
   color: #888;
   font-size: 12px;
   border-bottom: 1px solid #F6F6F6;

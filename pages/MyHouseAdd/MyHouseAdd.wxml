@@ -1,29 +1,21 @@
 <form>
-<view class='white-space'/>
+  <view class='white-space' />
   <view class='content'>
     <view class='customered-input'>
       <view>您的称呼:</view>
-      <input class='input'/>
+      <input class='input' placeholder="联系到您时怎么称呼呢" />
     </view>
     <view class='customered-input'>
       <view>联系方式:</view>
-      <input class='input'/>
+      <input class='input' placeholder="用于物业客服联系到您" />
     </view>
-    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" >
-      <view class="region-picker">
-        <view class='picker-text'>城市：</view>
-        <view class='picker-content'>{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
-      </view>
-    </picker>
-    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="label">
-    <view class="region-picker">
-      <view class='picker-text'>当前选择：</view>
-      <view class='picker-content'>
-      <!-- {{multiArray[0][multiIndex[0]].name}}({{multiArray[0][multiIndex[0]].code}}){{multiArray[1].length > 0 ?("，" + multiArray[1][multiIndex[1]].name + "(" + multiArray[1][multiIndex[1]].code + ")"):""}}{{multiArray[2].length > 0 ?("，" + multiArray[2][multiIndex[2]].name + "(" + multiArray[2][multiIndex[2]].code + ")"):""}} -->
-      </view>
-    </view>
-  </picker>
+    <CustomeredPicker name="cityPicker" text="城市" cols="2" dataArray="{{provinceAndCityData}}" bind:onPickerChoosed="onPickerChoosed" />
+    <CustomeredPicker name="townPicker" text="县镇" cols="2" dataArray="{{countryAndTownData}}" bind:onPickerChoosed="onPickerChoosed" />
+    <CustomeredPicker name="communityPicker" text="小区" cols="1" dataArray="{{communityData}}" bind:onPickerChoosed="onPickerChoosed" />
+    <CustomeredPicker name="roomPicker" text="房间" cols="3" dataArray="{{roomData}}" bind:onPickerChoosed="onPickerChoosed" />
+  </view>
 
-  <CustomeredPicker text="城市" cols="2" region="{{provinceAndCityData}}"/>
+  <view class='button-wrapper'>
+    <button type='primary' bindtap='onAddMyHouse'>保存并使用</button>
   </view>
 </form>

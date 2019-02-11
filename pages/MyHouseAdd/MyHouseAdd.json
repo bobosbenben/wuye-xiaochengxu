@@ -1,5 +1,10 @@
 {
   "usingComponents": {
     "CustomeredPicker": "../../utils/components/CustomeredPicker/CustomeredPicker"
-  }
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "新增我的房屋",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

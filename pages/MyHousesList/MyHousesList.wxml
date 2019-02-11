@@ -4,6 +4,6 @@
   <template is="MyHouseTemplate" data="{{...item.singleHouseInfo}}" />
 </view>
 
-<view class='button-wrapper' bindtap='onAddMyHouse'>
-  <button type='primary'>新增我的房屋</button>
+<view class='button-wrapper'>
+  <button type='primary' bindtap='onAddMyHouse'>新增我的房屋</button>
 </view>

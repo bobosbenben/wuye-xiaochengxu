@@ -38,3 +38,8 @@ page{
     padding: 13px;
     background-color: #FFFFFF;
 }
+
+.button-wrapper{
+  padding:0px 15px;
+  margin-top: 20px;
+}

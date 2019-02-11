@@ -8,6 +8,10 @@
   padding: 10px 0px;
 }
 
+.picker-text{
+  font-size: 18px;
+}
+
 .picker{
     padding: 13px;
     background-color: #FFFFFF;
