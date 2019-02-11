@@ -1,6 +1,7 @@
 <import src="../CustomeredTagTemplate/CustomeredTagTemplate.wxml" />
 
 <template name="MyHouseTemplate">
+  <view class='white-space' />
   <view class='main-info'>
     <view class='head'>
       <view>万佳御园小区</view>
@@ -17,7 +18,7 @@
         <view class='white-space' />
         <view class='update'>
           <view class='wing'/>
-          <button size='mini'>修改</button>
+          <view><button size='mini'>修改</button></view>
         </view>
       </view>
     </view>

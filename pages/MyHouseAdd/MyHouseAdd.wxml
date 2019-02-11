@@ -1,0 +1,29 @@
+<form>
+<view class='white-space'/>
+  <view class='content'>
+    <view class='customered-input'>
+      <view>您的称呼:</view>
+      <input class='input'/>
+    </view>
+    <view class='customered-input'>
+      <view>联系方式:</view>
+      <input class='input'/>
+    </view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" >
+      <view class="region-picker">
+        <view class='picker-text'>城市：</view>
+        <view class='picker-content'>{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
+      </view>
+    </picker>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="label">
+    <view class="region-picker">
+      <view class='picker-text'>当前选择：</view>
+      <view class='picker-content'>
+      <!-- {{multiArray[0][multiIndex[0]].name}}({{multiArray[0][multiIndex[0]].code}}){{multiArray[1].length > 0 ?("，" + multiArray[1][multiIndex[1]].name + "(" + multiArray[1][multiIndex[1]].code + ")"):""}}{{multiArray[2].length > 0 ?("，" + multiArray[2][multiIndex[2]].name + "(" + multiArray[2][multiIndex[2]].code + ")"):""}} -->
+      </view>
+    </view>
+  </picker>
+
+  <CustomeredPicker text="城市" cols="2" region="{{provinceAndCityData}}"/>
+  </view>
+</form>

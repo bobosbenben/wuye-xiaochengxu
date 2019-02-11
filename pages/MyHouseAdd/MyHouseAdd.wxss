@@ -1,0 +1,40 @@
+/* pages/MyHouseAdd/MyHouseAdd.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.white-space{
+  height: 9px;
+}
+
+.content{
+  background-color: white;
+  padding: 0px 15px;
+}
+.customered-input{
+  border-bottom: 1px solid #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 0px;
+  font-size: 18px;
+}
+
+.input{
+  padding-left: 20rpx;
+}
+
+.region-picker{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 10px 0px;
+}
+
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}

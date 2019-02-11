@@ -1,0 +1,14 @@
+/* utils/components/CustomeredPicker/CustomeredPicker.wxss */
+.region-picker{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 10px 0px;
+}
+
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}

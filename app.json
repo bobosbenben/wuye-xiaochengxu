@@ -2,7 +2,8 @@
   "pages": [
     "pages/MyHousesList/MyHousesList",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/MyHouseAdd/MyHouseAdd"
   ],
   "window": {
     "backgroundTextStyle": "light",

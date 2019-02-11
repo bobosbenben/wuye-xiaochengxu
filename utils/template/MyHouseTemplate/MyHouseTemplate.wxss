@@ -1,5 +1,10 @@
 @import '../CustomeredTagTemplate/CustomeredTagTemplate.wxss';
 
+.white-space{
+  height: 9px;
+  background-color: #f2f2f2;
+}
+
 .main-info{
   background-color: white;
   padding: 0px 15px;
@@ -60,4 +65,14 @@
 .phone-number{
   font-size: 16px;
   color: #999999;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: #fff;
+  color: rgb(58, 180, 221);
+  padding: 0;
 }
