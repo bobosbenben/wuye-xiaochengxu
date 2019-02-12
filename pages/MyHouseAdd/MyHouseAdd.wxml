@@ -2,20 +2,34 @@
   <view class='white-space' />
   <view class='content'>
     <view class='customered-input'>
-      <view>您的称呼:</view>
-      <input class='input' placeholder="联系到您时怎么称呼呢" />
+      <wux-input label="您的称呼" placeholder="联系到您时怎么称呼呢" bind:change="onNameChange" clear="{{true}}"/>
     </view>
     <view class='customered-input'>
-      <view>联系方式:</view>
-      <input class='input' placeholder="用于物业客服联系到您" />
+      <wux-input label="联系方式" placeholder="用于物业客服联系到您" type="number" bind:change="onPhoneNumberChange" clear="{{true}}"/>
     </view>
-    <CustomeredPicker name="cityPicker" text="城市" cols="2" dataArray="{{provinceAndCityData}}" bind:onPickerChoosed="onPickerChoosed" />
-    <CustomeredPicker name="townPicker" text="县镇" cols="2" dataArray="{{countryAndTownData}}" bind:onPickerChoosed="onPickerChoosed" />
-    <CustomeredPicker name="communityPicker" text="小区" cols="1" dataArray="{{communityData}}" bind:onPickerChoosed="onPickerChoosed" />
-    <CustomeredPicker name="roomPicker" text="房间" cols="3" dataArray="{{roomData}}" bind:onPickerChoosed="onPickerChoosed" />
+    <view class="region-picker" bindtap="onOpen1">
+      <view class='picker-text'>城市</view>
+      <view class='picker-content'>{{title1}}</view>
+    </view>
+    <view class="region-picker" bindtap="onOpen2">
+      <view class='picker-text'>小区</view>
+      <view class='picker-content'>{{title2}}</view>
+    </view>
+    <view class="region-picker" bindtap="onOpen3">
+      <view class='picker-text'>房号</view>
+      <view class='picker-content'>{{title3}}</view>
+    </view>
+    <view class='region-picker'>
+      <view class='picker-text'>默认房屋</view>
+      <wux-switch name="a" slot="footer" value="{{ defaultAddress }}" bind:change="onDefaultAddressChange" />
+    </view>
   </view>
 
   <view class='button-wrapper'>
     <button type='primary' bindtap='onAddMyHouse'>保存并使用</button>
   </view>
+
+  <wux-cascader visible="{{ countryPickerVisible }}" title="所在城市" options="{{ districtData }}" bind:close="onClose1" bind:change="onChange1" defaultValue="{{value1}}" />
+  <wux-cascader visible="{{ communityPickerVisible }}" title="所在小区" options="{{ communityData }}" bind:close="onClose2" bind:change="onChange2" />
+  <wux-cascader visible="{{ roomPickerVisible }}" title="所在小区" options="{{ roomData }}" bind:close="onClose3" bind:change="onChange3" />
 </form>

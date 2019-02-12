@@ -1,6 +1,11 @@
 {
   "usingComponents": {
-    "CustomeredPicker": "../../utils/components/CustomeredPicker/CustomeredPicker"
+    "CustomeredPicker": "../../utils/components/CustomeredPicker/CustomeredPicker",
+    "wux-cell-group": "../../utils/components/dist/cell-group/index",
+    "wux-cell": "../../utils/components/dist/cell/index",
+    "wux-cascader": "../../utils/components/dist/cascader/index",
+    "wux-input": "../../utils/components/dist/input/index",
+    "wux-switch": "../../utils/components/dist/switch/index"
   },
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",

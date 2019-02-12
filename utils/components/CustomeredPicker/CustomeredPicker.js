@@ -85,32 +85,51 @@ Component({
         multiIndex: this.data.multiIndex
       };
 
-      if (e.detail.column == 0) {
-        let second = null; if (cols >= 2) second = this.getSecondByFirstIndex(e.detail.value);
-        let third = null; if (cols >= 3) third = this.getThirdByFirstIndex(e.detail.value);
-        
-        if(cols >= 2) data.multiArray[1] = second;
-        if(cols >= 3) data.multiArray[2] = third;
+      let multiIndex = [];
+      multiIndex.push(e.detail.value);
+      multiIndex.push(0);
+      data.multiIndex = multiIndex;
 
-        let multiIndex = [];
-        if(cols >= 1) multiIndex.push(e.detail.value);
-        if(cols >= 2) multiIndex.push(0);
-        if(cols >= 3) multiIndex.push(0);
-        data.multiIndex = multiIndex;
+      data.multiArray[1] = [{
+        "label": "万佳御园",
+        "value": "6",
+        "children": null
+      }, {
+          "label": "天隆佳园",
+          "value": "7",
+          "children": null
+        }]
 
         this.setData(data);
-      }
-      else if(e.detail.column == 1){
-        if(cols >= 3) {
-          let indexOfFirst = this.data.multiIndex[0];
-          let indexOfSecond = e.detail.value;
 
-          let third = this.getThirdBySecondAndFirstIndex(indexOfFirst,indexOfSecond);
-          data.multiArray[2] = third;
-          data.multiIndex = [indexOfFirst,indexOfSecond,0];
-          this.setData(data);
-        }
-      }
+
+
+      // if (e.detail.column == 0) {
+      //   let second = this.getSecondByFirstIndex(e.detail.value);
+      //   let third = this.getThirdByFirstIndex(e.detail.value);
+        
+      //   if(cols >= 2) data.multiArray[1] = second;
+      //   if(cols >= 3) data.multiArray[2] = third;
+
+      //   let multiIndex = [];
+      //   if(cols >= 1) multiIndex.push(e.detail.value);
+      //   if(cols >= 2) multiIndex.push(0);
+      //   if(cols >= 3) multiIndex.push(0);
+      //   data.multiIndex = multiIndex;
+
+      //   this.setData(data);
+      // }
+      // else if(e.detail.column == 1){
+      //   if(cols >= 3) {
+      //     let indexOfFirst = this.data.multiIndex[0];
+      //     let indexOfSecond = e.detail.value;
+
+      //     let third = this.getThirdBySecondAndFirstIndex(indexOfFirst,indexOfSecond);
+      //     data.multiArray[2] = third;
+      //     data.multiIndex = [indexOfFirst,indexOfSecond,0];
+      //     this.setData(data);
+      //   }
+      // }
     }
   },
 
