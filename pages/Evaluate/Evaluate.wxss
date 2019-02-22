@@ -1,0 +1,19 @@
+/* pages/Evaluate/Evaluate.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.white-space{
+  height: 10px;
+}
+
+.container{
+ 
+}
+
+.button-wrapper{
+  padding:0px 15px;
+  margin-top: 20px;
+}

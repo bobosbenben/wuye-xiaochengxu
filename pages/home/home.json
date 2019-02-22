@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "wux-icon": "../../utils/components/dist/icon/index",
+    "wux-grids": "../../utils/components/dist/grids/index",
+    "wux-grid": "../../utils/components/dist/grid/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "首页",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

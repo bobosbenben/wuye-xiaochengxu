@@ -1,0 +1,16 @@
+<template name='NotifyTemplate'>
+  <view class='white-space'></view>
+  <view class='notify-card'>
+    <view class='notify-head'>
+      <image class='head-img' src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E9%80%9A%E7%9F%A5%20(1).png' />
+      <text class='head-title'>停电通知</text>
+    </view>
+    <view class='notify-content'>
+      由于供电线路检修，以下小区将在18:30开始停电：万佳御园、太阳城西部片区，停电时间将持续24个小时,请大家做好停电的准备，电力恢复后将第一时间通知大家
+    </view>
+    <view class='notify-tail'>
+      发布时间：2019-02-14
+    </view>
+  </view>
+
+</template>

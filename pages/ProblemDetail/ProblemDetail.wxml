@@ -1,0 +1,28 @@
+<view class='head'>
+  <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/xq.png' class='head-img'></image>
+  <view class='head-text'>
+    <view class='head-text-room'>5号楼一单元903室</view>
+    <view class='head-text-time'>2018-09-28 13:19:35</view>
+  </view>
+</view>
+
+<view class='content'>
+  <text class='content-text' decode='{{true}}'>&nbsp;&nbsp;我的下水道堵上了，但是一直没有人来给修，打电话也没人接</text>
+  <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/ceshi.png' mode='widthFix' class='content-img' />
+  <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/user/001e0ff384c246408274fe6c64b394b95720927450608836301-pic'  mode='widthFix' class='content-img'/>
+</view>
+
+<view class='tail'>
+  <wux-card thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E5%AE%A2%E6%9C%8D.png" title="物业客服回复：" extra="">
+    <view slot="body">已由施工师傅上门解决，工单关闭</view>
+    <view slot="footer">2019-01-11 21:52:13</view>
+  </wux-card>
+</view>
+
+<view class='status'>
+<wux-cell-group title="工单状态">
+  <wux-cell thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81-%E7%AD%89%E5%BE%85.png" title="工单状态" extra="已结单" hover-class="none"></wux-cell>
+  <wux-cell  wx:if="{{hasEvaluated}}" thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E8%AF%84%E4%BB%B7.png" title="服务评价" is-link  extra="已评价" url='../Evaluate/Evaluate' />
+  <wux-cell wx:if="{{!hasEvaluated}}" thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E8%AF%84%E4%BB%B7.png" title="服务评价" is-link  extra="请评价" url='../Evaluate/Evaluate' />
+</wux-cell-group>
+</view>

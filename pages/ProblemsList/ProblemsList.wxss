@@ -1,0 +1,8 @@
+/* pages/ProblemsList/ProblemsList.wxss */
+@import '../../utils/template/ProblemTemplate/ProblemTemplate.wxss';
+
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}

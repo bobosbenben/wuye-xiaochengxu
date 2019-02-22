@@ -1,0 +1,66 @@
+/* pages/ProblemAdd/ProblemAdd.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.white-space {
+  height: 8px;
+  background-color: #f2f2f2;
+}
+
+.head {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* padding: 0rpx 30rpx 0rpx 0rpx; */
+  background-color: white;
+}
+
+.head-title{
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  font-size: 40rpx;
+}
+
+.address-icon{
+  float:left;
+  width: 34rpx;
+  height: 34rpx;
+  padding-top: 8rpx;
+  margin-right: 10rpx;
+}
+
+.head-title-name{
+  font-family:microsoft yahei;
+  padding-left:34rpx;
+}
+
+
+.head-content {
+  font-family:microsoft yahei;
+  color: black;
+  font-weight: 400;
+  font-size: 34rpx;
+  padding-top: 10rpx;
+}
+
+.type{
+  background-color: white;
+}
+
+.description{
+  background-color: white;
+}
+
+.button-wrapper{
+  padding:0px 15px;
+  margin-top: 20px;
+}
+
+.upload-img{
+  height: 50rpx;
+  widht: 50rpx;
+}

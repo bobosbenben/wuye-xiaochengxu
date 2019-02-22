@@ -4,21 +4,21 @@
   <view class='white-space' />
   <view class='main-info'>
     <view class='head'>
-      <view>万佳御园小区</view>
-      <template wx:if="{{isShow}}" is="CustomeredTagTemplate" />
+      <view>{{community}}</view>
+      <template wx:if="{{isDefaultAddress}}" is="CustomeredTagTemplate" />
     </view>
 
-    <view class='content'>
-      <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/xq.png' class='community-img'/>
+    <view class='content' bindtap='onHouseSelected' data-id='{{id}}'>
+      <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/xq.png' class='community-img' bindt/>
       <view class='text-button'>
         <view class='info'>
-          <view class='address'>5号楼1单元903室</view>
-          <view class='phone-number'>联系方式：15391257468</view>
+          <view class='address'>{{building+unit+room}}</view>
+          <view class='phone-number'>联系方式：{{phoneNumber}}</view>
         </view>
         <view class='white-space' />
         <view class='update'>
           <view class='wing'/>
-          <view><button size='mini'>修改</button></view>
+          <view><button size='mini' catchtap='onMyHouseUpdate' data-id='{{id}}'>修改</button></view>
         </view>
       </view>
     </view>

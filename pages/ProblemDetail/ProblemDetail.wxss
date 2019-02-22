@@ -1,0 +1,67 @@
+/* pages/ProblemDetail/ProblemDetail.wxss */
+
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+}
+
+.head-img{
+  border-radius: 120rpx;
+  height: 120rpx;
+  width: 120rpx;
+}
+
+.head-text{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: center;
+}
+
+.head-text-room{
+  font-size: 32rpx;
+}
+
+.head-text-time{
+  font-size: 28rpx;
+  padding-top: 5px;
+  color: #888;
+}
+
+.content{
+  background-color: white;
+  padding: 15px 10px 5px 10px;
+  margin: 0px 10px;
+  /* border-radius: 5rpx; */
+}
+
+.content-text{
+  font-family: microsoft yahei;
+  font-size: 34rpx;
+  color: #444;
+  line-height: 50rpx;
+  font-weight: 550;
+  padding-bottom: 20px;
+}
+
+.content-img{
+  width: 100%;
+}
+
+.tail{
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.status{
+  margin-bottom: 30px;
+}

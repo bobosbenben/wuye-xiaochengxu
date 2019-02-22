@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "wux-card": "../../utils/components/dist/card/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "通知公告",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

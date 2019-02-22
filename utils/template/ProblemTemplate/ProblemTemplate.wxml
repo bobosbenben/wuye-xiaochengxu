@@ -1,0 +1,20 @@
+<template name="ProblemTemplate">
+  <view class='white-space' />
+  <view class='main-info'>
+    <view class='head'>
+      <view class='head-time'>2018-10-22 17:35:28</view>
+      <view class='head-text'>处理中</view>
+    </view>
+
+    <view class='content' bindtap='onProblemSelected' data-id='{{id}}'>
+      <view class='info'>
+        <view class='description'>{{description}}</view>
+      </view>
+    </view>
+
+    <view class='tail'>
+      <view class='tail-room'>房号：{{building+unit+room}}</view>
+    </view>
+  </view>
+
+</template>

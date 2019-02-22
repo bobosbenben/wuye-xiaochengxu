@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "wux-cell": "../../utils/components/dist/cell/index",
+    "wux-cell-group": "../../utils/components/dist/cell-group/index",
+    "wux-card": "../../utils/components/dist/card/index",
+    "wux-rater": "../../utils/components/dist/rater/index",
+    "wux-popup": "../../utils/components/dist/popup/index"
+  }
+}

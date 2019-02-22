@@ -1,0 +1,5 @@
+<import src="../../utils/template/ProblemTemplate/ProblemTemplate.wxml" />
+
+<view wx:for="{{array}}">
+  <template is="ProblemTemplate" data="{{...item}}" />
+</view>

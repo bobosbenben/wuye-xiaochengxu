@@ -1,0 +1,31 @@
+<view class='white-space'></view>
+<view class='shop'>
+  <image src='http://p0.meituan.net/mogu/1a71059ef431e68a3ff069f35448844e218981.jpg@600w_600h_1l' class='img'></image>
+  <view class='content'>
+    <text class='content-title'>鲜牛奶送货上门</text>
+    <view class='content-address'>
+      <image src='../../utils/image/address2.png' class='address-icon' />
+      <view class='address-text'>敏盖基地牛场</view>
+    </view>
+    <view class='content-phone'>
+      <image class='phone-img' src='../../utils/image/phone2.png'></image>
+      <view class='phone-text'>15391257468</view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class='white-space'></view> -->
+<view class='shop'>
+  <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/%E9%A6%96%E9%A1%B5%E6%B0%B4%E6%9A%96%E5%B7%A5logo.png' class='img'></image>
+  <view class='content'>
+    <text class='content-title'>擦玻璃打扫家</text>
+    <view class='content-address'>
+      <image src='../../utils/image/address2.png' class='address-icon' />
+      <view class='address-text'>无固定工作场所</view>
+    </view>
+    <view class='content-phone'>
+      <image class='phone-img' src='../../utils/image/phone2.png'></image>
+      <view class='phone-text'>15391257468</view>
+    </view>
+  </view>
+</view>

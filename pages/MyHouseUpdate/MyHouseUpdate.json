@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "wux-cascader": "../../utils/components/dist/cascader/index",
+    "wux-input": "../../utils/components/dist/input/index",
+    "wux-switch": "../../utils/components/dist/switch/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "修改我的房屋",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

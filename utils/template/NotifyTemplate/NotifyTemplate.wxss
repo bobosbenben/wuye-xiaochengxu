@@ -1,0 +1,21 @@
+.white-sapce{
+  height: 10px;
+}
+
+.notify-card{
+  padding: 5rpx 20rpx 5rpx 20rpx;
+}
+
+.notify-head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.head-img{
+  height: 32rpx;
+  width:  32rpx;
+}
+

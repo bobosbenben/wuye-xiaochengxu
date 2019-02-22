@@ -1,7 +1,7 @@
 <import src="../../utils/template/MyHouseTemplate/MyHouseTemplate.wxml" />
 
 <view wx:for="{{array}}">
-  <template is="MyHouseTemplate" data="{{...item.singleHouseInfo}}" />
+  <template is="MyHouseTemplate" data="{{...item}}" />
 </view>
 
 <view class='button-wrapper'>

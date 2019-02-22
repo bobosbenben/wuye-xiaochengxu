@@ -1,0 +1,13 @@
+<view class='grid-container'>
+<view class='white-space'></view>
+  <wux-grids bordered="{{false}}">
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/27%E5%8F%B0%E7%AB%99%E6%95%85%E9%9A%9C.png" label="故障报修" />
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E6%8A%95%E8%AF%89%E5%BB%BA%E8%AE%AE.png" label="投诉建议" />
+    <!-- <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E7%94%9F%E6%B4%BB%E7%BC%B4%E8%B4%B9.png" label="生活缴费" /> -->
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E9%80%9A%E7%9F%A5.png" label="通知公告" />
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E5%AE%A2%E6%9C%8D%20(1).png" label="物业客服" />
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E5%95%86%E9%93%BA.png" label="服务到家" />
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E6%88%BF%E5%B1%8B.png" label="我的房屋" />
+    <wux-grid thumb="https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/%E5%B7%A5%E5%8D%95.png" label="我的工单" />
+  </wux-grids>
+</view>

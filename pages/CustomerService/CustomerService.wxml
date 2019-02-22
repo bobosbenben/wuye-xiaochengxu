@@ -1,0 +1,30 @@
+<view wx:for="{{array}}" wx:key="id">
+
+  <view class='white-space'></view>
+  <wux-wing-blank size="default">
+    <wux-card title="{{item.name}}">
+      <view slot="body">
+        <view class='text-row'>
+          <view class='text-title'>
+            <image src='../../utils/image/community.png' class='address-icon' />
+            <view class='title'>服务小区：</view>
+          </view>
+          <view class='text-content'>{{item.community}}</view>
+        </view>
+        <view class='text-row'>
+          <view class='text-title'>
+            <image src='../../utils/image/location.png' class='address-icon' /><view class='title'>办公地点：</view>
+          </view>
+          <view>{{item.location}}</view>
+        </view>
+        <view class='text-row'>
+          <view class='text-title'>
+            <image src='../../utils/image/phone.png' class='address-icon' /><view class='title'>客服电话:</view>
+          </view>
+          <view class='phone' bindtap='onPhoneNumberClick' data-phone-number="{{item.phoneNumber}}">{{item.phoneNumber}}</view>
+        </view>
+      </view>
+    </wux-card>
+  </wux-wing-blank>
+
+</view>

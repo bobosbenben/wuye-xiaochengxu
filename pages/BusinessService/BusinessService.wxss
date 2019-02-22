@@ -1,0 +1,73 @@
+/* pages/BusinessService/BusinessService.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.white-space {
+  height: 10px;
+}
+
+.img {
+  height: 160rpx;
+  width: 140rpx;
+}
+
+.shop {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-bottom: 1px solid #ececec
+}
+
+.content {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.content-address {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  align-items: center;
+}
+
+.address-icon {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.address-text {
+  font-size: 34rpx;
+  padding-left: 10rpx;
+  color: #555;
+}
+
+.content-phone{
+  display: flex;
+  flex-direction: row;
+  padding-top: 15rpx;
+  align-items: center;
+}
+
+.phone-img{
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.phone-text{
+  font-size: 34rpx;
+  padding-left: 10rpx;
+  /* color: #555; */
+  color:blue;
+  text-decoration:underline;
+}

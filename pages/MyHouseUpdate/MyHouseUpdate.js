@@ -1,10 +1,33 @@
-// pages/MyHouseAdd/MyHouseAdd.js
+// pages/MyHouseUpdate/MyHouseUpdate.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    id:null,
+    houseInfo:{
+      id: 11,
+      name: '石伊波',
+      community: '万佳御园小区',
+      building: '5号楼',
+      unit: '1单元',
+      room: '903室',
+      defaultCountryArray: ["2","3","4"],
+      defaultCountryTitle: '内蒙古,鄂尔多斯,伊金霍洛旗',
+      defaultCommunityArray: ["5","6"],
+      defaultCommunityTitle: '阿镇,万佳御园',
+      defaultRoomArray: ["7","8","9"],
+      defaultRoomTitle: '5号楼,1单元,903室',
+      phoneNumber: '15391257468',
+      isDefaultAddress: true
+    },
+
+    phoneNumber: null,
+    name: null,
+    provinceAndCityAndCountryIds: null,
+    townAndCommunityIds: null,
+    buildingAndUnitAndRoomIds:null,
 
     districtData: [
       {
@@ -107,69 +130,14 @@ Page({
         "children": null
       }
     ],
-    
-    defaultAddress: true,
-    name: null,
-    phoneNumber: null,
-    provinceAndCityAndCountryIds:null,
-    townAndCommunityIds: null,
-    buildingAndUnitAndRoomIds: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    this.setData({id:options.id});
+    //从后台获取该id的房屋信息
   },
 
   onOpen1() {
@@ -179,8 +147,8 @@ Page({
     this.setData({ countryPickerVisible: false })
   },
   onChange1(e) {
-    this.setData({ 
-      title1: e.detail.options.map((n) => n.label).join(',') ,
+    this.setData({
+      title1: e.detail.options.map((n) => n.label).join(','),
       provinceAndCityAndCountryIds: e.detail.value
     })
   },
@@ -192,8 +160,8 @@ Page({
     this.setData({ communityPickerVisible: false })
   },
   onChange2(e) {
-    this.setData({ 
-      title2: e.detail.options.map((n) => n.label).join(',') ,
+    this.setData({
+      title2: e.detail.options.map((n) => n.label).join(','),
       townAndCommunityIds: e.detail.value
     })
   },
@@ -205,44 +173,49 @@ Page({
     this.setData({ roomPickerVisible: false })
   },
   onChange3(e) {
-    this.setData({ 
+    this.setData({
       title3: e.detail.options.map((n) => n.label).join(','),
       buildingAndUnitAndRoomIds: e.detail.value
     })
   },
 
-  onDefaultAddressChange(e){
-    this.setData({defaultAddress:e.detail.value});
+  onDefaultAddressChange(e) {
+    this.setData({ defaultAddress: e.detail.value });
+  },
+
+  onPhoneNumberChange(e) {
+    this.setData({phoneNumber:e.detail.value});
   },
 
   onNameChange(e){
     this.setData({name:e.detail.value});
   },
 
-  onPhoneNumberChange(e){
-    this.setData({phoneNumber:e.detail.value});
-  },
-
-  onAddMyHouse(){
+  onUpdateMyHouse: function(){
     let flag1 = this.data.name != null && this.data.name != '';
     let flag2 = this.data.phoneNumber != null && this.data.phoneNumber != '';
-    let flag3 = this.data.provinceAndCityAndCountryIds == null ? false : this.data.provinceAndCityAndCountryIds.length==3;
+    let flag3 = this.data.provinceAndCityAndCountryIds == null ? false : this.data.provinceAndCityAndCountryIds.length == 3;
     let flag4 = this.data.townAndCommunityIds == null ? false : this.data.townAndCommunityIds.length == 2;
     let flag5 = this.data.buildingAndUnitAndRoomIds == null ? false : this.data.buildingAndUnitAndRoomIds.length == 3;
 
-    if(flag1 && flag2 && flag3 && flag4 && flag5){
+    if (flag1 && flag2 && flag3 && flag4 && flag5) {
       console.log('可以提交数据了')
-      setTimeout(function(){
-        wx.navigateBack();
-      },1500);
     }
-    else{
+    else {
       wx.showModal({
-        title:'错误提示',
+        title: '错误提示',
         content: '您的信息填写不全啊',
         showCancel: false,
         confirmColor: '#1aad19'
       });
     }
+  },
+
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
   }
 })

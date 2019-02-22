@@ -1,0 +1,48 @@
+/* pages/CustomerService/CustomerService.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.white-space{
+  height: 10px;
+}
+
+.text-row{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.text-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.address-icon{
+  float:left;
+  width: 34rpx;
+  height: 34rpx;
+  padding-top: 8rpx;
+  margin-right: 10rpx;
+}
+
+.text-content{
+  text-align: left;
+}
+
+.title{
+  width: 160rpx;
+}
+
+.phone{
+  color:blue;
+  text-decoration:underline;
+}
+
+.phone:active{
+  background-color: #f2f2f2;
+}

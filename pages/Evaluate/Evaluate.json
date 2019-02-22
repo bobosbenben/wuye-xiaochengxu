@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "wux-cell": "../../utils/components/dist/cell/index",
+    "wux-cell-group": "../../utils/components/dist/cell-group/index",
+    "wux-rater": "../../utils/components/dist/rater/index",
+    "wux-button": "../../utils/components/dist/button/index",
+    "wux-textarea": "../../utils/components/dist/textarea/index"
+  }
+}

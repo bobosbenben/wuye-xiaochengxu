@@ -1,0 +1,35 @@
+<form>
+  <view class='white-space' />
+  <view class='content'>
+    <view class='customered-input'>
+      <wux-input label="您的称呼" placeholder="联系到您时怎么称呼呢" bind:change="onNameChange" clear="{{true}}" controlled="{{true}}" value='{{houseInfo.name}}'/>
+    </view>
+    <view class='customered-input'>
+      <wux-input label="联系方式" placeholder="用于物业客服联系到您" type="number" bind:change="onPhoneNumberChange" clear="{{true}}" controlled="{{true}}" value='{{houseInfo.phoneNumber}}' />
+    </view>
+    <view class="region-picker" bindtap="onOpen1">
+      <view class='picker-text'>城市</view>
+      <view class='picker-content'>{{houseInfo.defaultCountryTitle}}</view>
+    </view>
+    <view class="region-picker" bindtap="onOpen2">
+      <view class='picker-text'>小区</view>
+      <view class='picker-content'>{{houseInfo.defaultCommunityTitle}}</view>
+    </view>
+    <view class="region-picker" bindtap="onOpen3">
+      <view class='picker-text'>房号</view>
+      <view class='picker-content'>{{houseInfo.defaultRoomTitle}}</view>
+    </view>
+    <view class='region-picker'>
+      <view class='picker-text'>默认房屋</view>
+      <wux-switch name="a" slot="footer" value="{{ houseInfo.isDefaultAddress }}" bind:change="onDefaultAddressChange" />
+    </view>
+  </view>
+
+  <view class='button-wrapper'>
+    <button type='primary' bindtap='onUpdateMyHouse'>保存修改</button>
+  </view>
+
+  <wux-cascader visible="{{ countryPickerVisible }}" title="所在城市" options="{{ districtData }}" bind:close="onClose1" bind:change="onChange1" defaultValue="{{houseInfo.defaultCountryArray}}" />
+  <wux-cascader visible="{{ communityPickerVisible }}" title="所在小区" options="{{ communityData }}" bind:close="onClose2" bind:change="onChange2" defaultValue="{{houseInfo.defaultCommunityArray}}"/>
+  <wux-cascader visible="{{ roomPickerVisible }}" title="所在小区" options="{{ roomData }}" bind:close="onClose3" bind:change="onChange3" defaultValue="{{houseInfo.defaultRoomArray}}" />
+</form>

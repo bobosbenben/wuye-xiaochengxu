@@ -1,0 +1,22 @@
+<view>
+  <view class='white-space'></view>
+  <wux-cell-group title="">
+    <wux-cell hover-class="none" title="及时服务">
+      <wux-rater slot="footer" default-value="{{ 5 }}" margin="{{ 0 }}" font-size="{{40}}" star="☻" bind:change="onRaterChange" id="serviceOnTime"/>
+    </wux-cell>
+    <wux-cell hover-class="none" title="客服态度">
+      <wux-rater slot="footer" default-value="{{ 5 }}" margin="{{ 0 }}" font-size="{{40}}" star="☻" bind:change="onRaterChange" id="serviceAttitude"/>
+    </wux-cell>
+    <wux-cell hover-class="none" title="服务质量">
+      <wux-rater slot="footer" default-value="{{ 5 }}" margin="{{ 0 }}" font-size="{{40}}" star="☻" bind:change="onRaterChange" id="serviceQuality" />
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <wux-textarea hasCount rows="3" cursorSpacing="80" maxlength="40" placeholder="写下您对此次服务的评价吧" bind:change="onCommentChange"/>
+    </wux-cell>
+  </wux-cell-group>
+
+  <view class='button-wrapper'>
+    <button type='primary' bindtap='onEvaluateClick'>发表评论</button>
+  </view>
+
+</view>

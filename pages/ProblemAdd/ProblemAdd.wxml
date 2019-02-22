@@ -1,0 +1,40 @@
+<view>
+  <view class='white-space'></view>
+  <view class='head'>
+    <wux-cell is-link hover-class="none" url='/pages/MyHousesList/MyHousesList'>
+      <view class='head-title'>
+        <text class='head-title-name' decode="{{true}}">{{houseInfo.name}}&nbsp;&nbsp;&nbsp;&nbsp;{{houseInfo.phoneNumber}}</text>
+        <!-- <view class='head-title-phone'>15391257468</view> -->
+      </view>
+      <view class='head-content'>
+        <image src='../../utils/image/address.png' class='address-icon' /> {{houseInfo.city+houseInfo.country+houseInfo.town+houseInfo.community+houseInfo.building+houseInfo.unit+houseInfo.room}}
+      </view>
+    </wux-cell>
+  </view>
+
+  <view class='type'>
+    <view class='white-space'></view>
+    <wux-cell title="类型" extra="{{ typeTitle }}" bind:click="onTypeClick" is-link ></wux-cell>
+  </view>
+
+  <view class='description'>
+    <view class='white-space' />
+    <wux-cell-group title="Normal Usage">
+      <wux-cell hover-class="none">
+        <wux-textarea hasCount rows="3" cursorSpacing="80" maxlength="40" placeholder="请描述您遇到的问题" />
+      </wux-cell>
+      <wux-cell>
+        <wux-upload listType="picture-card" defaultFileList="{{ fileList }}" max="4" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+          <!-- <text>上传</text> -->
+          <image src='../../utils/image/Add.png' class='upload-img' />
+        </wux-upload>
+      </wux-cell>
+    </wux-cell-group>
+  </view>
+
+  <view class='button-wrapper'>
+    <button type='primary' bindtap='onAddMyHouse'>提交</button>
+  </view>
+
+  <wux-select id="wux-select-type" />
+</view>

@@ -1,9 +1,19 @@
 {
   "pages": [
+    "pages/BusinessServiceDetail/BusinessServiceDetail",
+    "pages/BusinessService/BusinessService",
+    "pages/ProblemsList/ProblemsList",
+    "pages/home/home",
+    "pages/CustomerService/CustomerService",
+    "pages/Notify/Notify",
+    "pages/ProblemDetail/ProblemDetail",
+    "pages/Evaluate/Evaluate",
+    "pages/ProblemAdd/ProblemAdd",
     "pages/MyHousesList/MyHousesList",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/MyHouseAdd/MyHouseAdd"
+    "pages/MyHouseAdd/MyHouseAdd",
+    "pages/MyHouseUpdate/MyHouseUpdate"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wux-card": "../../utils/components/dist/card/index",
+    "wux-wing-blank": "../../utils/components/dist/wing-blank/index"
+  }
+}

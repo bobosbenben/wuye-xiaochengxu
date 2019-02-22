@@ -1,0 +1,30 @@
+/* pages/Notify/Notify.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.notify{
+  padding: 10px 10px 0px 10px;
+}
+
+.notify-single:active{
+  background-color:#ececec!important
+}
+
+.content{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}
+
+.white-space{
+  height: 10px;
+}
+
+.time{
+  font-style:italic;
+}

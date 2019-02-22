@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "wux-cell": "../../utils/components/dist/cell/index",
+    "wux-select": "../../utils/components/dist/select/index",
+    "wux-textarea": "../../utils/components/dist/textarea/index",
+    "wux-upload": "../../utils/components/dist/upload/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "报修",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

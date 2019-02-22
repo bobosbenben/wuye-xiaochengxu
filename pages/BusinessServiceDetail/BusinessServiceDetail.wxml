@@ -1,0 +1,36 @@
+<view class="title">
+  <text class="title-text">{{unit.title}}</text>
+  <view class="title-tag">
+    <block wx:for="{{unit.tags}}" wx:for-item="item">
+      <text class="title-tag-text">{{item}}</text>
+    </block>
+  </view>
+</view>
+
+<view class='hr-container'>
+  <view class="hr"></view>
+</view>
+
+<view class="service-content">
+  <view class="service-content-text">
+    <text class="service-content-text-text" decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{unit.serviceContentText}}</text>
+  </view>
+</view>
+<view class="service-content-video">
+  <video id="serviceContentVideo" src="{{unit.serviceContentVideo}}" controls poster='{{unit.serviceContentVideoPoster}}'></video>
+</view>
+
+<view class='phone-container'>
+  <view class='group'>
+    <text class='phone-text'>分享：</text>
+    <button open-type="share">
+      <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/share.png' class='share'></image>
+    </button>
+  </view>
+  <view class='group'>
+    <text class='phone-text'>电话：</text>
+    <button bindtap='onPhoneClick'>
+      <image src='https://duobifuwu-1252535629.cos.ap-beijing.myqcloud.com/wuye/system/phone3.png' class='phone'></image>
+    </button >
+  </view>
+</view>

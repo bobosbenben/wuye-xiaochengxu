@@ -1,0 +1,13 @@
+<view class='notify'>
+
+  <view wx:for="{{array}}" wx:key="id" >
+    <view class='notify-single'>
+      <wux-card title="{{item.title}}" thumb="{{item.thumb}}" prefix-cls="notify-single wux-card">
+      <view slot="body" class='content'>{{item.content}}</view>
+      <view slot="footer" class='time'>发布日期：{{item.time}}</view>
+    </wux-card>
+    </view>
+    <view class='white-space'></view>
+  </view>
+
+</view>
